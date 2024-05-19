@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "5f24080b-2eb6-4105-a9e1-f334b469d0db",
+		"name": "Exchange rate service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28290004"
+	},
+	"item": [
+		{
+			"name": "Get rate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribe users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@example.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/subscribe",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

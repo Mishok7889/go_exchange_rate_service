@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package exchange;
+
+option go_package = "./proto";
+
+service ExchangeRateService {
+  rpc GetCurrentRate (GetCurrentRateRequest) returns (GetCurrentRateResponse);
+  rpc SubscribeEmail (SubscribeEmailRequest) returns (SubscribeEmailResponse);
+}
+
+message GetCurrentRateRequest {}
+
+message GetCurrentRateResponse {
+  float rate = 1;
+}
+
+message SubscribeEmailRequest {
+  string email = 1;
+}
+
+message SubscribeEmailResponse {
+  string message = 1;
+}
